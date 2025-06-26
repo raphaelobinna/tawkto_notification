@@ -13,4 +13,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["bash", "-c", "exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8080}"]
+CMD ["bash", "-c", "exec uvicorn main:app --host 0.0.0.0 --port ${PORT:-8080} --log-level info"]
